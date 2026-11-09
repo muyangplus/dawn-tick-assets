@@ -1,0 +1,38 @@
+{
+  "schema": 2,
+  "channel": "beta",
+  "version": "0.6.12",
+  "tag": "v0.6.12",
+  "commit": "55deadd",
+  "releasedAt": 1794199786020,
+  "notes": "渠道 beta · 来源 v0.6.12 · 提交 55deadd\n\n### 修复\n\n- 安卓多个带 loading 的功能卡死（导出日志、检查更新、下载安装包、打开外部浏览器、打开教务窗口等）：全局 busy 增加 60 秒看门狗，超时主动报错并释放蒙版，不再因为某一个原生调用/请求不返回而锁死后续所有操作；原生日志读取 8 秒超时、教务窗口 5 分钟超时、更新/预设清单 15 秒超时、分片下载 30 秒请求 / 180 秒数据超时\n- 安卓局域网「未发现局域网地址」：`NetworkInterface` 枚举不到时改用 `ConnectivityManager` 的链路地址（LinkProperties）兜底，这是部分机型系统能看到 Wi-Fi IPv4、应用却枚举为空的情况；仍为空时空态会区分「没有 Wi-Fi/有线」「已连 Wi-Fi 但没有 IPv4」「只有移动数据」，并显示网卡摘要与「复制诊断信息」",
+  "artifacts": [
+    "DawnTick-0.6.12-beta-android.apk",
+    "DawnTick-0.6.12-beta-web.zip",
+    "DawnTick-0.6.12-beta-windows-x64-portable.zip",
+    "DawnTick-0.6.12-beta-windows-x64-setup.exe"
+  ],
+  "files": {
+    "windowsSetup": {
+      "name": "DawnTick-0.6.12-beta-windows-x64-setup.exe",
+      "size": 5751807,
+      "sha256": "ab27e75c58b813693c90bd80077d139c68c448126026b10d0be1467387ed8695"
+    },
+    "windowsPortable": {
+      "name": "DawnTick-0.6.12-beta-windows-x64-portable.zip",
+      "size": 7616625,
+      "sha256": "4ebbfccadb0bd2bdde7d60c5af7bb945ae5f1a207abc7cc4a4630809ce3d6eb9"
+    },
+    "android": {
+      "name": "DawnTick-0.6.12-beta-android.apk",
+      "size": 35850086,
+      "sha256": "cb2e05103fd2edfc8059bea3b3c678737661e374861e645fab261fe409984f6c"
+    },
+    "web": {
+      "name": "DawnTick-0.6.12-beta-web.zip",
+      "size": 741087,
+      "sha256": "5cd57d7379277cbc882601106530ceca5570222d1eda3d667a77a2a596e745ea"
+    }
+  },
+  "checksums": "SHA256SUMS.txt"
+}

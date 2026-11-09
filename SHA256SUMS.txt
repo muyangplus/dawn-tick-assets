@@ -1,0 +1,5 @@
+cb2e05103fd2edfc8059bea3b3c678737661e374861e645fab261fe409984f6c  DawnTick-0.6.12-beta-android.apk
+5cd57d7379277cbc882601106530ceca5570222d1eda3d667a77a2a596e745ea  DawnTick-0.6.12-beta-web.zip
+4ebbfccadb0bd2bdde7d60c5af7bb945ae5f1a207abc7cc4a4630809ce3d6eb9  DawnTick-0.6.12-beta-windows-x64-portable.zip
+ab27e75c58b813693c90bd80077d139c68c448126026b10d0be1467387ed8695  DawnTick-0.6.12-beta-windows-x64-setup.exe
+dd967e4dee5c87b9cbccf6ce2747a0572653cb90deb34d77c7bcfd59abd4ac48  version.json
