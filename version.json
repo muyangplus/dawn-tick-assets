@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "channel": "dev",
+  "version": "0.6.12.202611121306",
+  "tag": "dev-latest",
+  "commit": "bb3f440",
+  "releasedAt": 1794489432136,
+  "notes": "渠道 dev · 来源 dev · 提交 bb3f440\n\n### 新增\n\n- 局域网同步：本机首次生成并持久化稳定 `deviceId`（UUID），UDP 发现广播与配对二维码都携带它；配对记录以 deviceId 为身份，换 IP/换端口静默更新，双方一起换 Wi-Fi 后可通过当前局域网广播重新认回\n- 已配对设备列表显示在线/离线、最近地址与上次同步时间，支持「重新配对 / 移除」；离线按 30s→5min 指数退避，不再无限重试旧端口；配对信息在应用重启后保留\n\n### 修复\n\n- 安卓插件调用报 `\"SystemActions.then()\" is not implemented on android`：Capacitor 插件代理被 async 函数直接返回时会被 Promise 当成 thenable，统一包一层「then 为 undefined」的安全代理；修复由此导致的 ABI 探测超时、原生日志读取超时、局域网开启失败、通知/小组件刷新报错；`lan-sync-http` 的 CapacitorHttp 也做同样包装，修复扫码/配对时「连接对方超时」\n\n### 新增\n\n- 安卓安装包按 ABI 拆分为 arm64 与 arm32 两个 APK（约 11MB / 8MB），客户端按设备 ABI 自动选；`version.json` 用 `android`（arm64）与 `android32`（v7）区分，旧客户端仍拿 arm64\n\n### 新增\n\n- 诊断日志支持弹窗直接查看与复制（Web 日志 + 安卓原生日志），可刷新、清空、复制全部；安卓上「导出日志」改为复制到剪贴板，不再依赖文件/分享插件\n- 弹窗打开时先显示 Web 日志，原生日志异步合并；整段原生读取（含插件加载）8 秒超时，修复「打开日志一直转圈」\n- 安卓安装包体积优化：ABI 只保留 arm64-v8a / armeabi-v7a，release 开启 R8 压缩与资源裁剪，dev 渠道也改用 release 构建（本地实测 37.6MB → 15.3MB）",
+  "artifacts": [
+    "DawnTick-0.6.12.202611121306-dev-android-arm32.apk",
+    "DawnTick-0.6.12.202611121306-dev-android-arm64.apk",
+    "DawnTick-0.6.12.202611121306-dev-web.zip",
+    "DawnTick-0.6.12.202611121306-dev-windows-x64-portable.zip",
+    "DawnTick-0.6.12.202611121306-dev-windows-x64-setup.exe"
+  ],
+  "files": {
+    "windowsSetup": {
+      "name": "DawnTick-0.6.12.202611121306-dev-windows-x64-setup.exe",
+      "size": 6653056,
+      "sha256": "d39818c3399bd7ff9d30c66e8174c83b1d295e97de6f722ab68d022f01a5bf04"
+    },
+    "windowsPortable": {
+      "name": "DawnTick-0.6.12.202611121306-dev-windows-x64-portable.zip",
+      "size": 9851309,
+      "sha256": "6fbf869244cbb803e668969d9b3ba6248e052eb6b6c5a9d573d535153b41f280"
+    },
+    "android": {
+      "name": "DawnTick-0.6.12.202611121306-dev-android-arm64.apk",
+      "size": 11020426,
+      "sha256": "46da21db6beaa617594b63a5d6b2ff1ab59b81d7515a3022e15284f28289b48a"
+    },
+    "android32": {
+      "name": "DawnTick-0.6.12.202611121306-dev-android-arm32.apk",
+      "size": 8266486,
+      "sha256": "6a9a87964b3d06c5709b508394cd49bd54ec07d987b199494bbe9c99a16d5b7f"
+    },
+    "web": {
+      "name": "DawnTick-0.6.12.202611121306-dev-web.zip",
+      "size": 746448,
+      "sha256": "ca54ec0809666a3575c971c1eef06c935e7e89c340ee8c3f52d9f5bc58bcd1d3"
+    }
+  },
+  "checksums": "SHA256SUMS.txt"
+}
