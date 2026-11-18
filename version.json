@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "channel": "release",
+  "version": "0.8.0",
+  "tag": "v0.8.0",
+  "commit": "65b4613",
+  "releasedAt": 1794970787093,
+  "notes": "渠道 release · 来源 main · 提交 65b4613\n\n### 新增\n\n- 课表可导出只读分享文件（学期、节次、课程与排课），对方从「导入备份」导入为新学期，不覆盖已有数据\n- 提醒设置新增「勿扰时段」：按星期设多段、可跨午夜，时段内的提醒顺延到结束或跳过，三端一致\n- 学期概览可导出报表（CSV）：学期、课时、课程进度、每周课时与考试，Excel 直接打开；不含出勤信息\n\n### 变更\n\n- 学期概览去掉「出勤估算」；停课的课次计入已上课时，不再单列\n- 学期概览新增每周课时、课程进度与考试时间线，课时排行改为课程进度\n- 应用图标改为白底浅蓝线条的日出图形，桌面、安卓、网页与通知小图标同步更新",
+  "artifacts": [
+    "DawnTick-0.8.0-release-android-arm32.apk",
+    "DawnTick-0.8.0-release-android-arm64.apk",
+    "DawnTick-0.8.0-release-web.zip",
+    "DawnTick-0.8.0-release-windows-x64-portable.zip",
+    "DawnTick-0.8.0-release-windows-x64-setup.exe"
+  ],
+  "files": {
+    "windowsSetup": {
+      "name": "DawnTick-0.8.0-release-windows-x64-setup.exe",
+      "size": 5852510,
+      "sha256": "a6b15e5e997a5f92f32158e1cc1821303dede18385bdfc43adc2b41e61ed01c1"
+    },
+    "windowsPortable": {
+      "name": "DawnTick-0.8.0-release-windows-x64-portable.zip",
+      "size": 7769026,
+      "sha256": "422b01d3df26fe53ede6a5378c954cdaa9e21b6d9c0781e1c7e86cffe6732441"
+    },
+    "android": {
+      "name": "DawnTick-0.8.0-release-android-arm64.apk",
+      "size": 11000093,
+      "sha256": "87ec8f005eecb69efb7ce35d7715c606d76b118821019d55595797202fee7709"
+    },
+    "android32": {
+      "name": "DawnTick-0.8.0-release-android-arm32.apk",
+      "size": 8246153,
+      "sha256": "c40f9f1635254b212159e14c6149aae47077a03dc85965b6e08cd9ad5a7edfd6"
+    },
+    "web": {
+      "name": "DawnTick-0.8.0-release-web.zip",
+      "size": 763455,
+      "sha256": "05bb52d210f0ff5a211b41b36e2c25575f58b80bd4783010060e6a43776ccbc3"
+    }
+  },
+  "checksums": "SHA256SUMS.txt"
+}
