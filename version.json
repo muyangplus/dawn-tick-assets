@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "channel": "beta",
+  "version": "0.9.0",
+  "tag": "v0.9.0",
+  "commit": "0b70ccd",
+  "releasedAt": 1795250570072,
+  "notes": "渠道 beta · 来源 main · 提交 0b70ccd\n\n### 新增\n\n- 升级后首次打开弹出本版本的更新内容，每个版本只弹一次；设置「更新后显示新版本内容」可关闭\n- 同步、备份、导入、小组件与提醒设置旁新增「查看帮助」，直接打开帮助页对应条目\n- 课表上单击已停课、已调走或调入的课次，可查看调整内容，并修改或删除这条调整\n- 停课可选范围与对象：只这一次、一段日期或从某天起结课，只停这个上课时段或整门课；写入前显示条数\n- 开发版新增设置 → AI，可填 OpenAI 兼容接口；导入课表「用 AI 识别」、新建日程「用 AI 生成」，均先预览再写入\n- 开发版「＋」菜单新增 AI 助手：对话查询与修改课表、日程和设置，改动先列成计划勾选执行，执行前自动快照可撤销\n- 检查更新、AI 识别等只读加载中按 Esc 或安卓返回键可中断；写入数据时不可中断并给出提示\n- Esc 与安卓返回键逐级返回：设置分组回分组列表、导入回上一步、帮助页回来源页、其他页回课表；课表页按返回键最小化应用\n\n### 变更\n\n- 三端日志统一为 error / warn / info / debug / trace 五级与同一组范围；Android 原生日志跟随设置里的日志级别；提醒、凭据加密、安装包与分享失败写入原生日志\n- 删除确认按钮统一为「确认删除」；桌面托盘勿扰动作改为「勿扰 60 分钟」，与安卓、网页一致\n- 网页端开启局域网配对的等待上限由 8 秒改为 10 秒，与安卓一致\n- 首页时间线的停课条目：时间列显示「停课」，副标题改写原来的节次与时间\n- 三端界面文案改写：按钮写动作，错误写原因与下一步；分步说明移入帮助页，帮助条目增至 29 条\n\n### 修复\n\n- 从空课表点「导入」后再回到设置页，导入抽屉会自行重新打开\n- 发布说明的 Full Changelog 比较基准改为按发布时间取上一个版本，正式版与测试版可互为基准，只排除 dev-latest\n- Android 检查更新走 GitHub 发布兜底时提示「没有提供安装包」：发布附件名与客户端识别规则对齐，发布内的 version.json 也能给出下载地址\n- Android 课表页手指按在本周课程上无法上下滚动页面；长按拖动调课不受影响\n- Android 主屏小组件一直显示「载入窗口小部件时出现问题」\n- dev 版检查更新总提示已是最新：同一基础版本的新构建按构建时间戳判断\n- 倒计时里已结束的条目一直显示「今天」：结束后不再显示，勾选完成的次日起不再显示；桌面悬浮窗与安卓考试小组件同一规则",
+  "artifacts": [
+    "DawnTick-0.9.0-beta-android-arm32.apk",
+    "DawnTick-0.9.0-beta-android-arm64.apk",
+    "DawnTick-0.9.0-beta-web.zip",
+    "DawnTick-0.9.0-beta-windows-x64-portable.zip",
+    "DawnTick-0.9.0-beta-windows-x64-setup.exe"
+  ],
+  "files": {
+    "windowsSetup": {
+      "name": "DawnTick-0.9.0-beta-windows-x64-setup.exe",
+      "size": 5889752,
+      "sha256": "5facfa77a00f3b04e85c15a24d29780c86b4f6a8f2973c5907fcb6cfec5c4ad6"
+    },
+    "windowsPortable": {
+      "name": "DawnTick-0.9.0-beta-windows-x64-portable.zip",
+      "size": 7817657,
+      "sha256": "03ae15b4aaa0569c72e835fc206d8d8989af499763e299e4e32d39eb297541e8"
+    },
+    "android": {
+      "name": "DawnTick-0.9.0-beta-android-arm64.apk",
+      "size": 11091038,
+      "sha256": "144a6463266216b64e6594bf54dec401f91dd13448821cebb1a5bbcd56cb8f42"
+    },
+    "android32": {
+      "name": "DawnTick-0.9.0-beta-android-arm32.apk",
+      "size": 8337098,
+      "sha256": "fae4d584c57d8cd8fa22877a7dea19e7bb88e3d326e7181790da7c15daf83fbc"
+    },
+    "web": {
+      "name": "DawnTick-0.9.0-beta-web.zip",
+      "size": 832730,
+      "sha256": "b975b150203f9681dfa432d78483da7be1fe65c46f014f477a3c38017366e032"
+    }
+  },
+  "checksums": "SHA256SUMS.txt"
+}
