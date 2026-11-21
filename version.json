@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "channel": "dev",
+  "version": "0.9.0.202611210820",
+  "tag": "dev-latest",
+  "commit": "3fe90ac",
+  "releasedAt": 1795249770815,
+  "notes": "渠道 dev · 来源 dev · 提交 3fe90ac",
+  "artifacts": [
+    "DawnTick-0.9.0.202611210820-dev-android-arm32.apk",
+    "DawnTick-0.9.0.202611210820-dev-android-arm64.apk",
+    "DawnTick-0.9.0.202611210820-dev-web.zip",
+    "DawnTick-0.9.0.202611210820-dev-windows-x64-portable.zip",
+    "DawnTick-0.9.0.202611210820-dev-windows-x64-setup.exe"
+  ],
+  "files": {
+    "windowsSetup": {
+      "name": "DawnTick-0.9.0.202611210820-dev-windows-x64-setup.exe",
+      "size": 6792031,
+      "sha256": "f2dd4b5b932c0c2bca5496a5b412fca11520f6e094347006c76edec87b4dc04b"
+    },
+    "windowsPortable": {
+      "name": "DawnTick-0.9.0.202611210820-dev-windows-x64-portable.zip",
+      "size": 10006595,
+      "sha256": "05ef8db8513720f508f9a3dc4bb5f64d16f5d3352c2534c82061f25488ba3720"
+    },
+    "android": {
+      "name": "DawnTick-0.9.0.202611210820-dev-android-arm64.apk",
+      "size": 11091066,
+      "sha256": "30c1e13cb3641449c6e13a20bca9bb6e5a0f7df5da6189d317eb34f88d6f741b"
+    },
+    "android32": {
+      "name": "DawnTick-0.9.0.202611210820-dev-android-arm32.apk",
+      "size": 8337126,
+      "sha256": "0a2f304ae0c4f57b6f61aed9b67b789d279ec99be46c2dd175c986481095b47c"
+    },
+    "web": {
+      "name": "DawnTick-0.9.0.202611210820-dev-web.zip",
+      "size": 832736,
+      "sha256": "dcef3539889164410f6ad91cc6c3c4f8bf2a4c3e205cac4228d5dc49d19c103d"
+    }
+  },
+  "checksums": "SHA256SUMS.txt"
+}
