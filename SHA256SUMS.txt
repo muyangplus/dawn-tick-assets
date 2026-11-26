@@ -1,0 +1,6 @@
+9225459c957573f9bc5a248a608b53e2408377f730ab0739340871fd6a52fc39  DawnTick-0.9.1-release-android-arm32.apk
+0ffe44ba87c901788b93de471e81185d2c159bff5644c560532d4c0af72163c3  DawnTick-0.9.1-release-android-arm64.apk
+b3a910d9dcb05a65f152ce4beb855cdca176b784fa21fbc2141526307fcfcc10  DawnTick-0.9.1-release-web.zip
+1e7ca953f573bf78a131c5b1f664c1fd7b02be46cae29a308bfb1e38b5843d66  DawnTick-0.9.1-release-windows-x64-portable.zip
+e7ba4e37fc59266593cb9fbb38a59d06ce0df9c06bbd62fa8a286915fde7db36  DawnTick-0.9.1-release-windows-x64-setup.exe
+bbf1f61165b9d89d4f40510e0fc21afafc17b3c77c44e04df5c72db54a23ef22  version.json

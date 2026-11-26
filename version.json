@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "channel": "release",
+  "version": "0.9.1",
+  "tag": "v0.9.1",
+  "commit": "a2df1d3",
+  "releasedAt": 1795698821838,
+  "notes": "渠道 release · 来源 main · 提交 a2df1d3\n\n### 新增\n\n- 设置 → 课表显示新增「显示停课课程」，默认关闭：周视图、课表图片与首页时间线不再出现停课的课次\n- AI 助手（开发版）：回复逐字显示；空对话给出示例问题；失败后可重试；对话保留在本机，「新对话」清空\n\n### 变更\n\n- 结课改为截短上课周：结课所在周剩下的课记停课，之后的周次从排课里移除，不再以停课出现；恢复在课程编辑里改回周次\n- 旧版逐次写下的结课停课记录在升级后首次打开时转为截短上课周\n- AI 助手（开发版）：回复支持列表与粗体；进行中显示正在调用的动作；计划卡片跟在对应那一轮后面；较早轮次只把问答带给模型\n\n### 修复\n\n- 窄屏上存储回退警告条的说明被挤成一字一行、盖住首次使用页的按钮\n- 首次使用就回退到浏览器存储时卡在建学期页：改为说明原因并给出「重试」「打开日志」\n- Android 网页重新载入后原生数据库连接已存在导致打不开、只能回退",
+  "artifacts": [
+    "DawnTick-0.9.1-release-android-arm32.apk",
+    "DawnTick-0.9.1-release-android-arm64.apk",
+    "DawnTick-0.9.1-release-web.zip",
+    "DawnTick-0.9.1-release-windows-x64-portable.zip",
+    "DawnTick-0.9.1-release-windows-x64-setup.exe"
+  ],
+  "files": {
+    "windowsSetup": {
+      "name": "DawnTick-0.9.1-release-windows-x64-setup.exe",
+      "size": 5894212,
+      "sha256": "e7ba4e37fc59266593cb9fbb38a59d06ce0df9c06bbd62fa8a286915fde7db36"
+    },
+    "windowsPortable": {
+      "name": "DawnTick-0.9.1-release-windows-x64-portable.zip",
+      "size": 7823488,
+      "sha256": "1e7ca953f573bf78a131c5b1f664c1fd7b02be46cae29a308bfb1e38b5843d66"
+    },
+    "android": {
+      "name": "DawnTick-0.9.1-release-android-arm64.apk",
+      "size": 11097614,
+      "sha256": "0ffe44ba87c901788b93de471e81185d2c159bff5644c560532d4c0af72163c3"
+    },
+    "android32": {
+      "name": "DawnTick-0.9.1-release-android-arm32.apk",
+      "size": 8343674,
+      "sha256": "9225459c957573f9bc5a248a608b53e2408377f730ab0739340871fd6a52fc39"
+    },
+    "web": {
+      "name": "DawnTick-0.9.1-release-web.zip",
+      "size": 838305,
+      "sha256": "b3a910d9dcb05a65f152ce4beb855cdca176b784fa21fbc2141526307fcfcc10"
+    }
+  },
+  "checksums": "SHA256SUMS.txt"
+}
