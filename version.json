@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "channel": "dev",
+  "version": "0.9.1.202611261331",
+  "tag": "dev-latest",
+  "commit": "a4fcdf4",
+  "releasedAt": 1795700416524,
+  "notes": "渠道 dev · 来源 dev · 提交 a4fcdf4\n\n### 变更\n\n- AI 功能在测试版与正式版开放：设置 → AI、导入课表「用 AI 识别」、新建日程「用 AI 生成」与「＋」菜单的 AI 助手",
+  "artifacts": [
+    "DawnTick-0.9.1.202611261331-dev-android-arm32.apk",
+    "DawnTick-0.9.1.202611261331-dev-android-arm64.apk",
+    "DawnTick-0.9.1.202611261331-dev-web.zip",
+    "DawnTick-0.9.1.202611261331-dev-windows-x64-portable.zip",
+    "DawnTick-0.9.1.202611261331-dev-windows-x64-setup.exe"
+  ],
+  "files": {
+    "windowsSetup": {
+      "name": "DawnTick-0.9.1.202611261331-dev-windows-x64-setup.exe",
+      "size": 6802019,
+      "sha256": "77fb4a9ab7fb35f74f910ab91d81d0458f573c9c39cd0da9f2479bfe316a8d71"
+    },
+    "windowsPortable": {
+      "name": "DawnTick-0.9.1.202611261331-dev-windows-x64-portable.zip",
+      "size": 10011601,
+      "sha256": "8a2e185fb3ec06aba4e3cbe502fdfe6c88863f88b77c11f901f5137e12ac668b"
+    },
+    "android": {
+      "name": "DawnTick-0.9.1.202611261331-dev-android-arm64.apk",
+      "size": 11097638,
+      "sha256": "4111784a3474c5412467bac98bcf3e11a66611412896f10e837b3aeab72b7eee"
+    },
+    "android32": {
+      "name": "DawnTick-0.9.1.202611261331-dev-android-arm32.apk",
+      "size": 8343698,
+      "sha256": "c880af8411a25ddf80e60f481a29bcde3b79f47a631be85623bb773bb292d980"
+    },
+    "web": {
+      "name": "DawnTick-0.9.1.202611261331-dev-web.zip",
+      "size": 838316,
+      "sha256": "c2e0f3a31cabef3a86c33ade2525add2455e604f9ff494360240aaa595a9e830"
+    }
+  },
+  "checksums": "SHA256SUMS.txt"
+}
